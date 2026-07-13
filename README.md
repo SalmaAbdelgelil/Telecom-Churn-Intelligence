@@ -1,4 +1,11 @@
-<img width="637" height="187" alt="image" src="https://github.com/user-attachments/assets/219a453f-cdc4-4bb0-ad8a-61299051de77" />
+<div align="center">
+
+<img
+src="https://github.com/user-attachments/assets/219a453f-cdc4-4bb0-ad8a-61299051de77"
+width="650"
+/>
+
+</div>
 
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
