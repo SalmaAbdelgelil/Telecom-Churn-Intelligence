@@ -1,4 +1,5 @@
-# Telecom Churn Intelligence
+<img width="637" height="187" alt="image" src="https://github.com/user-attachments/assets/219a453f-cdc4-4bb0-ad8a-61299051de77" />
+
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![Streamlit](https://img.shields.io/badge/WebApp-Streamlit-red?logo=streamlit)
@@ -21,7 +22,7 @@ Customer churn is one of the biggest challenges facing telecom companies.
 This project transforms raw customer data into actionable business intelligence through:
 
 - Interactive dashboards
-- Customer segmentation
+Customer risk prioritization
 - Revenue analysis
 - Churn analysis
 - Machine Learning prediction
@@ -34,28 +35,54 @@ The goal is not only to predict customer churn, but also to explain **why** cust
 
 ---
 
+# Business Problem
+
+Customer churn is one of the most significant challenges in the telecommunications industry.
+
+Acquiring a new customer is considerably more expensive than retaining an existing one. Therefore, identifying customers who are likely to churn before they leave can significantly reduce revenue loss and improve customer retention strategies.
+
+This project leverages Business Intelligence and Machine Learning techniques to help telecom companies:
+
+- Identify customers at high risk of churn.
+- Understand the key factors driving churn.
+- Prioritize customers based on business impact.
+- Recommend personalized retention actions.
+- Support data-driven business decisions.
+
+---
+
 # Features
 
 ## Executive Dashboard
 
-- Company KPIs
-- Churn Rate
-- Customer Distribution
+- Executive KPIs
+- Customer Overview
+- Churn Rate Analysis
 - Revenue Analysis
-- Contract Analysis
-- Internet Service Analysis
-- Customer Segmentation
+- Revenue Loss Tracking
+- Contract Type Analysis
+- Customer Retention by Contract
+- Churn by Tenure
+- Churn Category Breakdown
+- Top Churn Reasons
+- Geographic Churn Analysis (Top 5 Cities)
+- Interactive Filters & CSV Export
+- Business Insights
 
 ---
 
 ## Customer & Revenue Dashboard
 
-- Customer Demographics
-- Revenue Breakdown
-- Churn Category
-- Service Usage
-- Geographic Analysis
-- Interactive Filtering
+- Customer Demographics Analysis
+- Senior vs Non-Senior Churn Analysis
+- Revenue by Married Status
+- Revenue by Payment Method
+- Revenue Lost by Churn Category
+- Churn Rate by Age Group
+- Tech Support vs Internet Type Analysis
+- Customer Revenue Analysis
+- Interactive Filters & CSV Export
+- Business Recommendations
 
 ---
 
@@ -69,21 +96,13 @@ The goal is not only to predict customer churn, but also to explain **why** cust
 - Tuned Decision Threshold
 - Customer Risk Explanation
 - Personalized Business Recommendations
+- High-Risk Customer Watchlist
+- Top Customers Prioritization
 - What-if Simulator
 - Feature Importance Visualization
 - Model Reliability Check
 - Cross Validation
 - Overfitting Detection
-
----
-
-## Business Intelligence
-
-- Hidden Business Insights
-- Executive KPIs
-- Business Storytelling
-- Data-driven Recommendations
-- Customer Retention Analysis
 
 ---
 
@@ -113,9 +132,22 @@ XGBoost Classifier
      │
      ▼
 Prediction
-     │
-     ▼
+
+↓
+
+Risk Classification
+
+↓
+
+Risk Explanation
+
+↓
+
 Business Recommendation
+
+↓
+
+High-Risk Customer Watchlist
 ```
 
 ---
@@ -127,40 +159,12 @@ Business Recommendation
 | Python | Programming Language |
 | Streamlit | Web Application |
 | SQLite | Database |
-| SQL | Data Querying |
 | Pandas | Data Manipulation |
 | NumPy | Numerical Computing |
 | Plotly | Interactive Charts |
-| Power BI | Dashboard Development |
-| Excel | Data Analysis |
 | Scikit-learn | Machine Learning |
 | XGBoost | Classification Model |
 | Imbalanced-learn | Handling Imbalanced Data |
-
----
-
-# Project Structure
-
-```text
-Telecom-Churn-Intelligence/
-│
-├── app.py
-├── telecom_churn.db
-├── assets/
-│   ├── logo.png
-│   └── ...
-│
-├── screens/
-│   ├── overview.py
-│   ├── dashboard.py
-│   ├── customer.py
-│   └── ml.py
-│
-├── models/
-├── data/
-├── requirements.txt
-└── README.md
-```
 
 ---
 
@@ -169,7 +173,7 @@ Telecom-Churn-Intelligence/
 The final model was built using:
 
 - XGBoost Classifier
-- Feature Engineering
+- Business Feature Engineering
 - One-Hot Encoding
 - Random Under Sampling
 - Stratified Train/Test Split
@@ -193,6 +197,32 @@ Metrics used for evaluation include:
 - Confusion Matrix
 - Cross Validation
 - Overfitting Check
+
+---
+
+### Model Results:
+
+| Metric | Score |
+|--------|-------|
+| Accuracy | ~84% |
+| Recall | ~73% |
+| F1 Score | ~71% |
+| Train-Test Gap | ~0.7 pts (No Overfitting) |
+| 5-Fold CV Mean | ~83% |
+
+---
+
+# Business Value
+
+Unlike traditional churn prediction models that only classify customers as churn or non-churn, this project provides an end-to-end decision support system by:
+
+- Predicting customer churn probability.
+- Explaining why each customer is at risk.
+- Generating personalized retention recommendations.
+- Prioritizing high-value customers using a High-Risk Customer Watchlist.
+- Allowing business users to simulate customer scenarios using a What-if Simulator.
+
+The application bridges the gap between Machine Learning models and real business decision-making.
 
 ---
 
@@ -254,7 +284,6 @@ streamlit run app.py
 ---
 
 ## Prediction Module
-<img width="1347" height="637" alt="image" src="https://github.com/user-attachments/assets/c188e9fb-a6fe-4c83-baf9-cb703cb679ef" />
 <img width="1348" height="635" alt="image" src="https://github.com/user-attachments/assets/cab77fc4-58e4-4605-aedd-5e4bdb6ecbe5" />
 <img width="1345" height="630" alt="image" src="https://github.com/user-attachments/assets/f92c2631-a90a-48ae-82a2-be22dce5bcdc" />
 
@@ -281,8 +310,7 @@ streamlit run app.py
 - Customer Lifetime Value Prediction
 - Explainable AI (SHAP)
 - Real-time Prediction API
-- Customer Retention Simulator
-- Customer Ranking System
+- Automated Customer Retention Campaigns
 - Automated Reporting
 - Cloud Deployment
 - Multi-company Support
@@ -292,8 +320,6 @@ streamlit run app.py
 # Author
 
 **Salma Abdelgelil**
-
-Computer Science Student | Data Analyst | Backend Developer
 
 GitHub:
 https://github.com/SalmaAbdelgelil
