@@ -140,19 +140,22 @@ XGBoost Classifier
      ▼
 Prediction
 
-↓
+     │
+     ▼
 
 Risk Classification
-
-↓
+     │
+     ▼
 
 Risk Explanation
 
-↓
+     │
+     ▼
 
 Business Recommendation
 
-↓
+     │
+     ▼
 
 High-Risk Customer Watchlist
 ```
